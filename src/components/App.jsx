@@ -3,6 +3,7 @@ import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Section } from './Section/Section';
 import { Statistics } from './Statistics/Statistics';
 import { Notification } from './Notification/Notification';
+import { Wrapper } from './App.styled';
 
 export class App extends Component {
   state = {
@@ -32,7 +33,7 @@ export class App extends Component {
     const keys = Object.keys(this.state);
 
     return (
-      <div>
+      <Wrapper>
         <Section title="Please leave fedback">
           <FeedbackOptions
             options={keys}
@@ -52,7 +53,7 @@ export class App extends Component {
             <Notification message="There is no feedback" />
           )}
         </Section>
-      </div>
+      </Wrapper>
     );
   }
 }

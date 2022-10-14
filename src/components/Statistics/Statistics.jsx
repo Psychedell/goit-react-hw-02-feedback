@@ -8,7 +8,12 @@ export const Statistics = ({
   positivePercentage,
 }) => {
   return (
-    <ul>
+    <ul
+      style={{
+        backgroundColor: 'silver',
+        borderRadius: 5,
+      }}
+    >
       <li>Good: {good}</li>
       <li>Neutral: {neutral}</li>
       <li>Bad: {bad}</li>
